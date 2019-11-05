@@ -7,7 +7,7 @@ import { Redirect, Link } from 'react-router-dom'
 class Login extends Component {
     state = {
         user: '',
-        toHome: false,
+        redirectTo: false,
         showError: false
     }
 
@@ -30,7 +30,7 @@ class Login extends Component {
             
             this.setState(() => ({
                 user : '',
-                toHome: true
+                redirectTo: true
             }))
         } else {
             this.setState(() => ({
@@ -43,11 +43,12 @@ class Login extends Component {
     }
 
     render() {
-        const { toHome, showError } = this.state
+        const { redirectTo, showError } = this.state
         const { users } = this.props
+        const { from } = this.props.location.state || { from: { pathname: '/' } }
 
-        if( toHome ) {
-            return <Redirect to='/' />
+        if( redirectTo ) {
+            return <Redirect to={from} />
         }
 
         return (

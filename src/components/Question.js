@@ -34,6 +34,7 @@ class Question extends Component {
 
     render() {
         const { question, user, showLess } = this.props
+
         const { selectedOption } = this.state
 
         const { name, avatarURL } = user
@@ -111,8 +112,9 @@ Question.propTypes = {
 }
 
 function mapStateToProps ({users, questions, authedUser}, {qid, showLess}) {
-    const question = questions[qid]
-    const user = users[question['author']]
+    const question = !questions[qid] ? {} : questions[qid]
+    const user = question.length > 0? users[question['author']] : {}
+    
     return {
         authedUser,
         user,

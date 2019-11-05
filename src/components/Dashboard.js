@@ -1,20 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-//import { handleIntitialData } from '../actions/shared'
 import Question from './Question';
-import { handleGetQuestions } from '../actions/questions'
 
 class Dashboard extends Component {
     state = {
         answered : false,
         unanswered: true
     }
-
-    componentDidMount () {
-        this.props.dispatch(handleGetQuestions())
-        //this.props.dispatch(handleIntitialData())
-      }
 
     handleClick = (e) => {
         const className = e.target.className

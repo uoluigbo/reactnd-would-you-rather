@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import { Redirect } from 'react-router-dom'
 import Question from './Question'
 import QuestionResult from './QuestionResult'
 
 class QuestionPage extends Component {
     render() {
         const { qid, hasVoted } = this.props
+
+        if( !qid ) {
+            return <Redirect to="/page-not-found" />
+        }
 
         return (
             <div>

@@ -12,14 +12,14 @@ import PageNotFound from './PageNotFound'
 import PrivateRoute from './PrivateRoute'
 import LoadingBar from 'react-redux-loading-bar'
 import CreateUser from './CreateUser';
-import { handleGetUsers} from '../actions/users'
-//import { handleIntitialData } from '../actions/shared'
+//import { handleGetUsers} from '../actions/users'
+import { handleIntitialData } from '../actions/shared'
 
 class App extends Component {
 
   componentDidMount () {
-    this.props.dispatch(handleGetUsers())
-    //this.props.dispatch(handleIntitialData())
+    //this.props.dispatch(handleGetUsers())
+    this.props.dispatch(handleIntitialData())
   }
 
  render() {
@@ -41,6 +41,7 @@ class App extends Component {
                       <PrivateRoute path='/question/:id' component={QuestionPage} authedUser={authedUser}  />
                       <PrivateRoute path='/add' component={NewQuestion} authedUser={authedUser} />
                       <PrivateRoute path='/leaderboard' component={Leaderboard} authedUser={authedUser} />
+                      <PrivateRoute path='/page-not-found' component={PageNotFound} authedUser={authedUser} />
                       <PrivateRoute path='*' component={PageNotFound} authedUser={authedUser}/>
                     </Switch> 
                 </div>
