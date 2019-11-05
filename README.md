@@ -2,7 +2,7 @@
 
 The Would You Rather App is a polling game. A user is able to create a poll and answer poll questions. It includes a leaderboard where users can see who is leading in the game.
 
-A user has to be log in to participate in the game. 
+A user has to log in to participate in the game. 
 
 ## Main Page
 Poll questions are displayed in two tabs of answered and unanswered questions. 
