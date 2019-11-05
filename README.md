@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Would You Rather App
 
-## Available Scripts
+The Would You Rather App is a polling game. A user is able to create a poll and answer poll questions. It includes a leaderboard where users can see who is leading in the game.
 
-In the project directory, you can run:
+A user has to be log in to participate in the game. 
 
-### `yarn start`
+## Main Page
+Poll questions are displayed in two tabs of answered and unanswered questions. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Question Page
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Displays the question options.
+* If the user has not voted, they are presented with options to vote
+* If already voted, they are presented with the voting details
 
-### `yarn test`
+## New Question Page
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The user can enter a poll question with 2 options
 
-### `yarn build`
+## Leaderboard Page
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The leaderboard Page shows a list of ranked users with their scores. 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Create User Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A new account can be created here.
 
-### `yarn eject`
+## Installing and running
+* clone from: https://github.com/uoluigbo/reactnd-would-you-rather.git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Run commands: npm install or yarn install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Run the App
+* Run command: npm start or yarn start
