@@ -66,6 +66,7 @@ class CreateUser extends Component {
                         type="text" 
                         name="name" 
                         placeholder="Enter name"
+                        autoComplete="off"
                         onChange={this.handleChange}
                         />
                         <input
@@ -73,6 +74,7 @@ class CreateUser extends Component {
                         type="text" 
                         name="username"
                         placeholder="Enter username"
+                        autoComplete="off"
                         onChange={this.handleChange}
                         />
                         <button

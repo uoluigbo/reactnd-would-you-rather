@@ -12,13 +12,11 @@ import PageNotFound from './PageNotFound'
 import PrivateRoute from './PrivateRoute'
 import LoadingBar from 'react-redux-loading-bar'
 import CreateUser from './CreateUser';
-//import { handleGetUsers} from '../actions/users'
 import { handleIntitialData } from '../actions/shared'
 
 class App extends Component {
 
   componentDidMount () {
-    //this.props.dispatch(handleGetUsers())
     this.props.dispatch(handleIntitialData())
   }
 

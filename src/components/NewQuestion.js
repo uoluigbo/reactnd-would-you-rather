@@ -44,6 +44,7 @@ class NewQuestion extends Component {
                      type="text" 
                      name="optionOne" 
                      placeholder="Enter Option One Text"
+                     autoComplete="off"
                      onChange={this.handleChange}
                       />
                      <h4>
@@ -53,6 +54,7 @@ class NewQuestion extends Component {
                      type="text" 
                      name="optionTwo"
                      placeholder="Enter Option Two Text"
+                     autoComplete="off"
                      onChange={this.handleChange}
                       />
                     <button
